@@ -30,6 +30,11 @@
             text-align: center;
         }
         
+        ul {
+            
+            list-style-type: none;
+            
+        }
 
         .wrap {
             margin: auto;
@@ -55,86 +60,175 @@
 
             padding: 25px;
         }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        .hvr-grow {
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            transform: scale(1.1);
+        }
+
+
+        /* */
+
+        .hvr-underline-from-left {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        }
+        .hvr-underline-from-left:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #2098D1;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        }
+        .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+        right: 0;
+        }
+
+                
     </style>
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="jumbotron">
-            <h1 class="display-4">MENU</h1>
+    <ul>
+        <div class="wrap">
+            <div class="jumbotron">
+                <h1 class="display-4">MENU</h1>
+                
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">주문하기</a>
+                </p>
+            </div>
+            <div class="posting-box">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">박스</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                        placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">리뷰</label>
+                    <input type="password" class="form-control" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-primary">저장</button>
+            </div>
             
-            <hr class="my-4">
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">주문하기</a>
-            </p>
+            <li>
+            <div class="card-columns">
+            
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <a href="http://naver.com" class="card-title">더블 버거 세트</a>
+                        <p class="card-text">8700원</p>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <a href="#" class = "hvr-grow">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_2175115_20220106094310079.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <a href="http://naver.com" class="card-title">크리스피 치킨</a>
+                        <p class="card-text">8700원</p>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#" class = "hvr-grow">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://www.mcdonalds.co.kr/upload/product/pcfile/1614163187334.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <a href="http://naver.com" class="card-title">빅맥 세트</a>
+                        <p class="card-text">8700원</p>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#" class = "hvr-underline-from-left">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_2275053_20220105162151333.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <a href="http://naver.com" class="card-title">징거 버거 세트</a>
+                        <p class="card-text">8700원</p>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class = "hvr-underline-from-left">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/ad97665b-d094-46e4-a67f-989de4b223d7.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <a href="http://naver.com" class="card-title">와퍼 세트</a>
+                        <p class="card-text">8700원</p>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </a>
+            </li>
+                </div>
+            </div>
         </div>
-        <div class="posting-box">
-            <div class="form-group">
-                <label for="exampleInputEmail1">아티클 URL</label>
-                <input type="email" class="form-control" aria-describedby="emailHelp"
-                    placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">간단 코멘트</label>
-                <input type="password" class="form-control" placeholder="">
-            </div>
-            <button type="submit" class="btn btn-primary">기사 저장</button>
-        </div>
-        
-        <div class="card-columns">
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com" class="card-title">더블 버거 세트</a>
-                    <p class="card-text">8700원</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_2175115_20220106094310079.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com" class="card-title">크리스피 치킨</a>
-                    <p class="card-text">8700원</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://www.mcdonalds.co.kr/upload/product/pcfile/1614163187334.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com" class="card-title">빅맥 세트</a>
-                    <p class="card-text">8700원</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_2275053_20220105162151333.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com" class="card-title">징거 버거 세트</a>
-                    <p class="card-text">8700원</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/ad97665b-d094-46e4-a67f-989de4b223d7.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com" class="card-title">와퍼 세트</a>
-                    <p class="card-text">8700원</p>
-                    <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
+    </ul>
+    
 </body>
 
 </html>
