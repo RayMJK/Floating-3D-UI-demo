@@ -6,7 +6,7 @@
         }
         
         .jumbotron {
-            background: rgba(21, 255, 0, 0.623);
+            background: rgba(231, 165, 43, 0.623);
         }
 
         ul {
@@ -68,6 +68,7 @@
 
         strong {
             font-weight: bold;
+            color: #ae0000;
         }
         
 
