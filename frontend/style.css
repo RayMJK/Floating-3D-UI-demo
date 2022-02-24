@@ -1,7 +1,9 @@
 
         * {
-            font-family: 'Jua', sans-serif;
+            
             text-align: center;
+            font-size: 34px;
+            background-color: #000;
             
         }
         
@@ -28,18 +30,74 @@
         
         .card-img-top {
             width: 300px;
+            height: 200px;
         }
         
-        .card-body {
-           
-            
-        }
 
         ._card {
             display: flex;
             width: 900px;
             
         }
+
+        .price {
+            font-size: large;
+        }
+        /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+        .col-xs-3 {
+            width: 25%;
+            margin: auto;
+            
+        }
+
+        .restaurantcontent .menuitem .pricecol .addtocart-button {
+            font-size: 1.2rem;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .btn.btn-rounded {
+            border-radius: 20px;
+        }
+        .btn {
+            -webkit-transition: background .05s ease-in;
+            transition: background .05s ease-in;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        .btn-primary {
+            color: black;
+            background-color: #ff9100;
+            border-color: #e68300;
+            
+        }
+        .btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            padding: 6px 12px;
+            font-size: 16px;
+            line-height: 1.428571429;
+            border-radius: 0px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+
+
 
         .posting-box {
             margin: 10px auto 30px auto;
@@ -68,7 +126,8 @@
 
         strong {
             font-weight: bold;
-            color: #ae0000;
+            font-size: 40px;
+            color: white;
         }
         
 
@@ -82,7 +141,7 @@
             }
         .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
 
-            transform: scale(1.3);
+            transform: scale(1.9);
             }
 
 
@@ -118,4 +177,17 @@
         }
 
                 
-  
+  /* *//* *//* *//* *//* *//* */
+  /* *//* *//* *//* *//* *//* */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Roboto, "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", Dotum, applegothic, sans-serif, "Malgun Gothic";
+            font-size: 16px;
+            line-height: 1.42857;
+            color: rgb(51, 51, 51);
+            background-color: rgb(255, 255, 255);
+        }
