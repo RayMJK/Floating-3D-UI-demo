@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(247, 197, 91);
+    text-align: center;
+  }
+  .input {
+    background-color: rgb(37, 37, 37);
+  }
+  input[type="text"] {
+    width: 80%;
+    margin: 10px auto;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 50px;
+    color: orange;
+    background-color: black;
+    border: 2px solid orange;
+  }
+  .button {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    background-color: orange;
+    padding: 5px;
+  }
+/* ///////////////// */
+  .a{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    background-color: orange;
+    padding: 5px;
+  }
+
+  /* ///////////////// */
+
+  button {
+    font-size: 40px;
+    background-color: black;
+    color: orange;
+    border: none;
+  }
+  .container {
+    width: 50%;
+    border: 8px solid;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .draw {
+    width: 50%;
+    border: 8px solid;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .hasil {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(37, 37, 37);
+  }
+  .button-hasil {
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: orange;
+    color: black;
+    transform: scale(1.3);
+    transition: 2s;
+  }
+  
+  input[type="text"]:focus {
+    border: 2px solid white;
+    outline: none;
+  }
+  button:active {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  /* //////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////// */
+  
+  
+  .draw {
+    transition: color 2s;
+  }
+  .draw::before, .draw::after {
+    border: 1px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::before {
+    top: 0;
+    left: 0;
+  }
+  .draw::after {
+    bottom: 0;
+    right: 0;
+  }
+  .draw:hover {
+    color: #0eb7da;
+  }
+  .draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  .draw:hover::before {
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    transition: width 1s ease-out, height 1s ease-out 1s;
+  }
+  .draw:hover::after {
+    border-bottom-color: #0eb7da;
+    border-left-color: #0eb7da;
+    transition: border-color 1s ease-out 1s, width 1s ease-out 1s, height 1s ease-out 1s;
+  }
+  
