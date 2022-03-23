@@ -2,63 +2,69 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 
-    <title>Restaurant Menu</title>
+  <script type="text/javascript">
+    document.oncontextmenu = function () {
+      return false;
+    }
+  </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="./main.js"></script>
+  <title>Restaurant Menu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="./main.js"></script>
 
 
-    <!-- sound -->
-    <audio id='audio_play' src='./zapsplat_multimedia_button_click_007_53868.mp3'></audio>
-    <script type="text/javascript">
-        function play() {
-            var audio = document.getElementById('audio_play');
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-                audio.currentTime = 0
-            }
-        }
-    </script>
+  <!-- sound -->
+  <audio id='audio_play' src='./zapsplat_multimedia_button_click_007_53868.mp3'></audio>
+  <script type="text/javascript">
+    function play() {
+      var audio = document.getElementById('audio_play');
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+        audio.currentTime = 0
+      }
+    }
+  </script>
 
 
 
 
 </head>
 
-<body>
-    <ul>
-        <div class="wrap">
-            <div class="jumbotron">
-                <h1 class="display-4">MENU</h1>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <ul>
+    <div class="wrap">
+      <div class="jumbotron">
+        <h1 class="display-4">MENU</h1>
 
-                <hr class="my-4">
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button" style="color: black;">주문하기</a>
-                </p>
-            </div>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button" style="color: black;">주문하기</a>
+        </p>
+      </div>
 
-            <!-- 
+      <!-- 
             <div class="posting-box">
                 <div class="form-group">
                     <label for="exampleInputEmail1">박스</label>
@@ -75,221 +81,207 @@
 
 
 
-            <li>
-                <div class="_card">
+      <li>
+        <div class="_card">
 
-                    <div class="hvr-underline-from-left" style="width:300px">
-                        <a class="button" href="#popup1">
-                        <!-- <button onmouseover="play()">-->
-                        <img class="card-img-top"
-                            src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/54cabb35-3bf8-4067-9a99-74e6dd8dd278.png"
-                            alt="Card image cap" , onclick="play()">
-                        </a>
-                    </div>
+          <div class="hvr-underline-from-left" style="width:300px">
+            <a class="button" href="#popup1">
+              <!-- <button onmouseover="play()">-->
+              <img class="card-img-top"
+                src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/54cabb35-3bf8-4067-9a99-74e6dd8dd278.png"
+                alt="Card image cap" , onclick="play()">
+            </a>
+          </div>
 
-                    <div class="card-body" style="width:300px">
-                        <strong>
-                            아이스크림
-                        </strong>
+          <div class="card-body" style="width:300px">
+            <strong>
+              아이스크림
+            </strong>
 
-                        <div class="col-xs-3 pricecol">
-                            <span class="price">
-                                3000원
-                            </span>
-                            <br>
-                            <br>
-                            <a href="#" data-menuitem-id="74796"
-                                class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
-                                onclick="return false;" , onmouseover="play()">
-                                담기
-                            </a>
+            <div class="col-xs-3 pricecol">
+              <span class="price">
+                3000원
+              </span>
+              <br>
+              <br>
+              <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
+                onclick="return false;" , onmouseover="play()">
+                담기
+              </a>
 
-                        </div>
+            </div>
 
-                        <p class="card-text comment"></p>
-                    </div>
+            <p class="card-text comment"></p>
+          </div>
 
-                </div>
-            </li>
-
-            <li>
-                <div class="_card">
-                    <div class="hvr-underline-from-left" style="width:300px">
-                        <a class="button" href="#popup1">
-                            <!-- <button onmouseover="play()">-->
-                            <img class="card-img-top"
-                                src="https://sulbing.com/data/file/menu/1794566202_Lb8y6kNP_f931cb2ce98b63fd324e04e2dfb06c52bac2e278.png"
-                                alt="Card image cap" , onclick="play()">
-                            </button>
-                        </a>
-                    </div>
-                    <div class="card-body" style="width:300px">
-                        <strong>
-                            콜드브루 아메리카노
-                        </strong>
-                        <div class="col-xs-3 pricecol">
-                            <span class="price">
-                                21,000원
-                            </span>
-                            <br>
-                            <br>
-                            <a href="#" data-menuitem-id="74796"
-                                class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
-                                onclick="return false;" , onmouseover="play()">
-                                담기
-                            </a>
-
-                        </div>
-                        <p class="card-text comment"></p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="_card">
-                    <div class="hvr-underline-from-left" style="width:300px">
-                        <a class="button" href="#popup1">
-                        <img class="card-img-top"
-                            src="https://sulbing.com/data/file/menu/1794566202_KDnULV8o_dfd1490e5d902494bb875bb452220741c7241dfb.png"
-                            alt="Card image cap" , onclick="play()">
-                        </a>
-                    </div>
-                    <div class="card-body" style="width:300px">
-                        <strong>
-                            망고 케이크
-                        </strong>
-                        <div class="col-xs-3 pricecol">
-                            <span class="price">
-                                6,000원
-                            </span>
-                            <br>
-                            <br>
-                            <a href="#" data-menuitem-id="74796"
-                                class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
-                                onclick="return false;" , onmouseover="play()">
-                                담기
-                            </a>
-
-                        </div>
-                        <p class="card-text comment"></p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="_card">
-                    <div class="hvr-underline-from-left" style="width:300px">
-                        <a class="button" href="#popup1">
-                        <img class="card-img-top"
-                            src="https://sulbing.com/data/file/menu/1988351642_AXh3VTcq_d8f37c2d098d2f0b62ae0a98cabe04e7824a937b.png"
-                            alt="Card image cap" , onclick="play()">
-                        </a>
-                    </div>
-                    <div class="card-body" style="width:300px">
-                        <strong>
-                            딸기 빙수
-                        </strong>
-                        <div class="col-xs-3 pricecol">
-                            <span class="price">
-                                14,000원
-                            </span>
-                            <br>
-                            <br>
-                            <a href="#" data-menuitem-id="74796"
-                                class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
-                                onclick="return false;" , onmouseover="play()">
-                                담기
-                            </a>
-
-                        </div>
-                        <p class="card-text comment"></p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="_card">
-                    <div class="hvr-underline-from-left" style="width:300px">
-                        <a class="button" href="#popup1">
-                        <img class="card-img-top"
-                            src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
-                            alt="Card image cap" , onclick="play()">
-                        </a>
-                    </div>
-                    <div class="card-body" style="width:300px">
-                        <strong>
-                            더블버거세트
-                        </strong>
-                        <div class="col-xs-3 pricecol">
-                            <span class="price">
-                                27,000원
-                            </span>
-                            <br>
-                            <br>
-                            <a href="#" data-menuitem-id="74796"
-                                class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
-                                onclick="return false;" , onmouseover="play()">
-                                담기
-                            </a>
-
-                        </div>
-                        <p class="card-text comment"></p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="_card">
-                    <div class="hvr-underline-from-left" style="width:300px">
-                        <a class="button" href="#popup1">
-                        <img class="card-img-top"
-                            src="https://sulbing.com/data/file/menu/thumb-3554379581_RxAw6XYt_66188b2191c3fde5e9146d34355b8424a3d75649_600x600.png"
-                            alt="Card image cap" , onclick="play()">
-                        </a>
-                    </div>
-                    <div class="card-body" style="width:300px">
-                        <strong>
-                            녹차 빙수
-                        </strong>
-                        <div class="col-xs-3 pricecol">
-                            <span class="price">
-                                12,000원
-                            </span>
-                            <br>
-                            <br>
-                            <a href="#" data-menuitem-id="74796"
-                                class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
-                                onclick="return false;" , onmouseover="play()">
-                                담기
-                            </a>
-
-                        </div>
-                        <p class="card-text comment"></p>
-                    </div>
-                </div>
-            </li>
         </div>
+      </li>
+
+      <li>
+        <div class="_card">
+          <div class="hvr-underline-from-left" style="width:300px">
+            <a class="button" href="#popup1">
+              <!-- <button onmouseover="play()">-->
+              <img class="card-img-top"
+                src="https://sulbing.com/data/file/menu/1794566202_Lb8y6kNP_f931cb2ce98b63fd324e04e2dfb06c52bac2e278.png"
+                alt="Card image cap" , onclick="play()">
+              </button>
+            </a>
+          </div>
+          <div class="card-body" style="width:300px">
+            <strong>
+              콜드브루 아메리카노
+            </strong>
+            <div class="col-xs-3 pricecol">
+              <span class="price">
+                21,000원
+              </span>
+              <br>
+              <br>
+              <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
+                onclick="return false;" , onmouseover="play()">
+                담기
+              </a>
+
+            </div>
+            <p class="card-text comment"></p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="_card">
+          <div class="hvr-underline-from-left" style="width:300px">
+            <a class="button" href="#popup1">
+              <img class="card-img-top"
+                src="https://sulbing.com/data/file/menu/1794566202_KDnULV8o_dfd1490e5d902494bb875bb452220741c7241dfb.png"
+                alt="Card image cap" , onclick="play()">
+            </a>
+          </div>
+          <div class="card-body" style="width:300px">
+            <strong>
+              망고 케이크
+            </strong>
+            <div class="col-xs-3 pricecol">
+              <span class="price">
+                6,000원
+              </span>
+              <br>
+              <br>
+              <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
+                onclick="return false;" , onmouseover="play()">
+                담기
+              </a>
+
+            </div>
+            <p class="card-text comment"></p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="_card">
+          <div class="hvr-underline-from-left" style="width:300px">
+            <a class="button" href="#popup1">
+              <img class="card-img-top"
+                src="https://sulbing.com/data/file/menu/1988351642_AXh3VTcq_d8f37c2d098d2f0b62ae0a98cabe04e7824a937b.png"
+                alt="Card image cap" , onclick="play()">
+            </a>
+          </div>
+          <div class="card-body" style="width:300px">
+            <strong>
+              딸기 빙수
+            </strong>
+            <div class="col-xs-3 pricecol">
+              <span class="price">
+                14,000원
+              </span>
+              <br>
+              <br>
+              <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
+                onclick="return false;" , onmouseover="play()">
+                담기
+              </a>
+
+            </div>
+            <p class="card-text comment"></p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="_card">
+          <div class="hvr-underline-from-left" style="width:300px">
+            <a class="button" href="#popup1">
+              <img class="card-img-top"
+                src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
+                alt="Card image cap" , onclick="play()">
+            </a>
+          </div>
+          <div class="card-body" style="width:300px">
+            <strong>
+              더블버거세트
+            </strong>
+            <div class="col-xs-3 pricecol">
+              <span class="price">
+                27,000원
+              </span>
+              <br>
+              <br>
+              <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
+                onclick="return false;" , onmouseover="play()">
+                담기
+              </a>
+
+            </div>
+            <p class="card-text comment"></p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="_card">
+          <div class="hvr-underline-from-left" style="width:300px">
+            <a class="button" href="#popup1">
+              <img class="card-img-top"
+                src="https://sulbing.com/data/file/menu/thumb-3554379581_RxAw6XYt_66188b2191c3fde5e9146d34355b8424a3d75649_600x600.png"
+                alt="Card image cap" , onclick="play()">
+            </a>
+          </div>
+          <div class="card-body" style="width:300px">
+            <strong>
+              녹차 빙수
+            </strong>
+            <div class="col-xs-3 pricecol">
+              <span class="price">
+                12,000원
+              </span>
+              <br>
+              <br>
+              <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing"
+                onclick="return false;" , onmouseover="play()">
+                담기
+              </a>
+
+            </div>
+            <p class="card-text comment"></p>
+          </div>
+        </div>
+      </li>
+    </div>
 
 
     <div id="popup1" class="overlay">
-        <div class="popup">
-            <h2>주문이 완료되었습니다.</h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-            감사합니다.
-            </div>
+      <div class="popup">
+        <h2>주문이 완료되었습니다.</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          감사합니다.
         </div>
+      </div>
     </div>
 
 
 </body>
 
-<<<<<<< HEAD
-</html>
-=======
-<<<<<<< HEAD
-</html>
-=======
-</html>
->>>>>>> 4429c66... 3.15
->>>>>>> ad7f567... 3.15
+<<<<<<< HEAD </html>======= <<<<<<< HEAD </html>======= </html>>>>>>>> 4429c66... 3.15>>>>>>> ad7f567... 3.15
