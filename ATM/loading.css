@@ -5,11 +5,12 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, #243b55 0%, #141e30 100%);
   font-family: "Baloo Tamma 2", cursive;
   text-align: center;
+  margin-top: 270px;
 }
 
 .loader {
   padding-top: 70px;
-  width: 960px;
+  width: 700px;
   margin: 150px auto 70px;
   position: relative;
 }
@@ -44,6 +45,7 @@ body {
   color: white;
   text-align: center;
   animation: blinking 1.5s ease-in-out infinite alternate;
+  margin-top: 80px;
 }
 
 @keyframes load {
