@@ -1,16 +1,9 @@
 
 #test2 {
-<<<<<<< HEAD
     width: 800px;
     height: 800px;
     display: block;
   }
-=======
-<<<<<<< HEAD
-  width: 800px;
-  height: 800px;
-  display: block;
-}
 
 * {
 
@@ -21,7 +14,7 @@
 }
 
 .jumbotron {
-  background: rgba(231, 165, 43, 0.623);
+  background: rgba(83, 66, 241, 0.623);
 }
 
 ul {
@@ -59,6 +52,7 @@ ul {
   font-size: large;
   color: azure;
 }
+
 
 /* */
 /* */
@@ -98,8 +92,8 @@ ul {
 
 .btn-primary {
   color: black;
-  background-color: #ff9100;
-  border-color: #e68300;
+  background-color: #4b3ae7;
+  border-color: #324ad4;
 
 }
 
@@ -419,13 +413,14 @@ width: 120%;
   }
   
   .jumbotron {
-    background: rgba(231, 165, 43, 0.623);
+    background: rgba(75, 46, 243, 0.623);
+    text-align: center;
   }
   
   ul {
   
     list-style-type: none;
-  
+    
   }
   
   .wrap {
@@ -454,8 +449,9 @@ width: 120%;
   }
   
   .price {
-    font-size: large;
+    font-size: 50px;
     color: azure;
+    white-space: nowrap;
   }
   
   /* */
@@ -804,9 +800,3 @@ width: 120%;
   }
   /**//**//**//**//**//**//**//**//**//**//**//**/
   /**//**//**//**//**//**//**//**//**//**//**//**/
-<<<<<<< HEAD
-  /**//**//**//**//**//**//**//**//**//**//**//**/
-=======
-  /**//**//**//**//**//**//**//**//**//**//**//**/
->>>>>>> 4429c66... 3.15
->>>>>>> ad7f567... 3.15
