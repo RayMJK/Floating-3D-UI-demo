@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Restaurant Menu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href = "style.css">
+    <script src="./main.js"></script>
+
+
+    <!-- sound -->
+    <audio id='audio_play' src='./zapsplat_multimedia_button_click_007_53868.mp3'></audio> 
+        <script type="text/javascript"> 
+        function play() { 
+            var audio = document.getElementById('audio_play'); 
+            if (audio.paused) { 
+                audio.play(); 
+            }else{ 
+                audio.pause(); 
+                audio.currentTime = 0 
+            } 
+        } 
+        </script>
+
+
+</head>
+
+<body>
+    <ul>
+        <div class="wrap">
+            <div class="jumbotron">
+                <h1 class="display-4">MENU</h1>
+                
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button" style="color: black;">주문하기</a>
+                </p>
+            </div>
+
+            <!-- 
+            <div class="posting-box">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">박스</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                        placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">리뷰</label>
+                    <input type="password" class="form-control" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-primary">저장</button>
+            </div>
+            -->
+
+
+
+            <li>
+                <div class="_card">
+                    <div class = "hvr-grow" style="width:300px">
+                        <!-- <button onmouseover="play()">-->
+                        <img class="card-img-top"
+                            src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
+                            alt="Card image cap", onmouseover="play()">
+                        </button>
+                    </div>
+                    <div class="card-body" style="width:300px">
+                        <strong>
+                            더블버거세트
+                        </strong>
+                        <div class="col-xs-3 pricecol">
+                            <span class="price">
+                                27,000원        
+                            </span>
+                            <br>
+                            <br>
+                            <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing" onclick="return false;">
+                                담기        
+                            </a>
+                    
+                        </div>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="_card">
+                    <div class = "hvr-grow" style="width:300px">
+                        <!-- <button onmouseover="play()">-->
+                        <img class="card-img-top"
+                            src="https://kfcapi.inicis.com/kfcs_api_img/KFCS/goods/DL_2175115_20220106094310079.png"
+                            alt="Card image cap", onmouseover="play()">
+                        </button>
+                    </div>
+                    <div class="card-body" style="width:300px">
+                        <strong>
+                            더블버거세트
+                        </strong>
+                        <div class="col-xs-3 pricecol">
+                            <span class="price">
+                                27,000원        
+                            </span>
+                            <br>
+                            <br>
+                            <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing" onclick="return false;">
+                                담기        
+                            </a>
+                    
+                        </div>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="_card">
+                    <div class = "hvr-grow" style="width:300px">
+                        <img class="card-img-top"
+                            src="https://www.mcdonalds.co.kr/upload/product/pcfile/1614163187334.png"
+                            alt="Card image cap", onmouseover="play()">
+                    </div>
+                    <div class="card-body" style="width:300px">
+                        <strong>
+                            더블버거세트
+                        </strong>
+                        <div class="col-xs-3 pricecol">
+                            <span class="price">
+                                27,000원        
+                            </span>
+                            <br>
+                            <br>
+                            <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing" onclick="return false;">
+                                담기        
+                            </a>
+                    
+                        </div>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="_card">
+                    <div class = "hvr-grow" style="width:300px">
+                        <img class="card-img-top"
+                            src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
+                            alt="Card image cap", onmouseover="play()">
+                    </div>
+                    <div class="card-body" style="width:300px">
+                        <strong>
+                            더블버거세트
+                        </strong>
+                        <div class="col-xs-3 pricecol">
+                            <span class="price">
+                                27,000원        
+                            </span>
+                            <br>
+                            <br>
+                            <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing" onclick="return false;">
+                                담기        
+                            </a>
+                    
+                        </div>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="_card">
+                    <div class = "hvr-grow" style="width:300px">
+                        <img class="card-img-top"
+                            src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
+                            alt="Card image cap", onmouseover="play()">
+                    </div>
+                    <div class="card-body" style="width:300px">
+                        <strong>
+                            더블버거세트
+                        </strong>
+                        <div class="col-xs-3 pricecol">
+                            <span class="price">
+                                27,000원        
+                            </span>
+                            <br>
+                            <br>
+                            <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing" onclick="return false;">
+                                담기        
+                            </a>
+                            
+                        </div>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="_card">
+                    <div class = "hvr-grow" style="width:300px">
+                        <img class="card-img-top"
+                            src="https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.png?package=INNOUT"
+                            alt="Card image cap", onmouseover="play()">
+                    </div>
+                    <div class="card-body" style="width:300px">
+                        <strong>
+                            더블버거세트
+                        </strong>
+                        <div class="col-xs-3 pricecol">
+                            <span class="price">
+                                27,000원        
+                            </span>
+                            <br>
+                            <a href="#" data-menuitem-id="74796" class="btn btn-primary btn-rounded addtocart-button onlyareamissing" onclick="return false;">
+                                담기        
+                            </a>
+                    
+                        </div>
+                        <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </ul>
+    
+</body>
+
+</html>
