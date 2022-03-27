@@ -658,7 +658,7 @@ strong {
 /* */
 
 
-.hvr-underline-from-left:active {
+/* .hvr-underline-from-left:active {
   display: inline-block;
   vertical-align: middle;
   
@@ -691,7 +691,7 @@ strong {
 .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
   right: 0;
-}
+} */
 
 
 /* */
