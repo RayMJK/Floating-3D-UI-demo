@@ -499,8 +499,10 @@ strong {
 }
 
 .jumbotron {
+  margin: 200px 0 0 0;
   background: rgba(75, 46, 243, 0.623);
   text-align: center;
+  height: 40px;
 }
 
 ul {
