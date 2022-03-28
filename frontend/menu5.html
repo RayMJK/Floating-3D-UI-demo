@@ -108,12 +108,12 @@
 
             </div>
 
-            
-            <button class="add-to-cart">
 
-              <div class="default">주문하기</div>
+            <button class="add-to-cart" onclick="play()">
 
-              <div class="success">완료</div>
+              <div class="default" onclick="play()">주문하기</div>
+
+              <div class="success" onclick="play()">완료</div>
 
               <div class="cart">
 
@@ -162,11 +162,11 @@
               </a> -->
 
             </div>
-            <button class="add-to-cart">
+            <button class="add-to-cart" onclick="play()">
 
-              <div class="default">주문하기</div>
+              <div class="default" onclick="play()">주문하기</div>
 
-              <div class="success">완료</div>
+              <div class="success" onclick="play()">완료</div>
 
               <div class="cart">
 
@@ -210,10 +210,10 @@
                 onclick="return false;" , onmouseover="play()">
                 담기
               </a> -->
-              
+
             </div>
-            
-            <button class="add-to-cart">
+
+            <button class="add-to-cart" onclick="play()">
 
               <div class="default">주문하기</div>
 
@@ -263,7 +263,7 @@
               </a> -->
 
             </div>
-            <button class="add-to-cart">
+            <button class="add-to-cart" onclick="play()">
 
               <div class="default">주문하기</div>
 
@@ -303,7 +303,7 @@
             </strong>
             <div class="col-xs-3 pricecol">
               <span class="price">
-                17,000원
+                7,000원
               </span>
               <br>
               <br>
@@ -312,7 +312,7 @@
                 담기
               </a> -->
             </div>
-            <button class="add-to-cart">
+            <button class="add-to-cart" onclick="play()">
 
               <div class="default">주문하기</div>
 
@@ -362,7 +362,7 @@
             <!-- <p class="card-text comment"></p> -->
             <!-- <p class="card-text comment"></p> -->
             <!-- <p class="card-text comment"></p> -->
-            <button class="add-to-cart">
+            <button class="add-to-cart" onclick="play()">
 
               <div class="default">주문하기</div>
 
@@ -401,6 +401,17 @@
         });
 
       });
+
+
+      function play() {
+        var audio = document.getElementById('audio_play');
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0
+        }
+      }
     </script>
 
 </body>
