@@ -13,7 +13,7 @@
 }
 
 .jumbotron {
-  background: rgba(83, 66, 241, 0.623);
+  background: black(83, 66, 241, 0.623);
 }
 
 ul {
@@ -259,7 +259,7 @@ strong {
     font-family: Roboto, "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", Dotum, applegothic, sans-serif, "Malgun Gothic";
     font-size: 16px;
     line-height: 1.42857;
-    color: rgb(51, 51, 51);
+    color: black(51, 51, 51);
     background-color: rgb(255, 255, 255);
   }
 
@@ -500,7 +500,7 @@ strong {
 
 .jumbotron {
   margin: 200px 0 0 0;
-  background: rgba(75, 46, 243, 0.623);
+  background: black;
   text-align: center;
   height: 40px;
 }
